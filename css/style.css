@@ -1,0 +1,458 @@
+@import url(https://db.onlinewebfonts.com/c/353a654ed58fa6541892766a02591924?family=BandaRegular);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+  }
+  
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+    font-family: BandaRegular,Trebuchet,Tahoma,Arial,sans-serif;
+}
+
+header{
+    height: 60px;
+    border-bottom: 3px solid #468cc8;
+}
+main{
+    overflow: hidden;
+}
+footer{
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.nav-bar,
+section{
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
+}
+.menu-toggle {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    margin: 0.8rem;
+    left: 0;
+    border-top: 6px solid #444;
+    border-right: none;
+    border-bottom: 18px double #444;
+    border-left: none;
+    cursor: pointer
+}
+.menu-toggle:hover {
+    border-top: 6px solid #5cb85c;
+    border-bottom: 18px double #5cb85c;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-bar ul {
+    display: none;
+}
+.show-menu{
+    display: block !important;
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    padding: 0px;
+    background: #fff;
+    text-align: left;
+}
+.logo{
+    width: 180px;
+    margin-top: 10px;
+}
+ul{
+    margin: 20.5px auto;
+}
+ul > li {
+    display: block;
+    padding: 1rem;
+}
+ul > li > a {
+    text-decoration: none;
+    color: #40586d;
+}
+ul > li > a:hover {
+    font-weight: bold;
+}
+.top-section, .second-section{
+    max-width: 100%;
+}
+.top-bg{
+    height: 400px;
+    padding: 1.5rem 0;
+    background-image: url('../img/top-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    margin: 1rem auto;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+p{
+    margin: 1rem 0;
+    font-family: Verdana,Helvetica,Sans-Serif;
+    color: #808080;
+    word-spacing: 1px;
+    line-height: 1.8rem;
+}
+.package-detail{
+    text-align: center;
+}
+.package-detail > h3{
+    max-width: 550px;
+    margin: auto;
+    font-size: 3rem;
+    color: #468cc8;
+    border-bottom: 2px solid #ccc;
+}
+.package-detail > h3 > span{
+    font-size: 1rem;
+    font-weight: normal;
+    color: #808080;
+}
+.package-detail > button{
+    margin-right: -1px;
+    margin-left: -1px;
+}
+.btn{
+    margin: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #5cb85c;
+    color: #fff;
+    font-family: Verdana,Helvetica,Sans-Serif;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+}
+a.btn{
+    margin: 0rem;
+    padding: 0.5rem 1rem;
+}
+.btn:hover{
+    background-color: #449d44;
+    cursor: pointer;
+}
+.row{
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-block{
+    margin-top: -160px;
+    padding: 0 1rem;
+}
+.card {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: 2s;
+    transform-style: preserve-3d;
+    color: #5d5d5d;
+    text-align: left;
+    cursor:pointer;
+}
+.card-front, .card-back {
+    width:100%;
+    height:auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius:40px;
+    backface-visibility: hidden;
+}
+.card-front, .second-card .card-back {
+    display: flex;
+    flex-direction: column;
+}
+.card-back {
+    position: absolute;
+    top: 0px;
+}
+
+.card-front > div, .card-back > div {
+    padding: 0 1rem;
+    overflow: hidden;
+}
+.card-back {
+    transform: rotateY( 180deg );
+}
+.card:hover{
+  transform: rotateY( 180deg );
+}
+.card-bg-img{
+    height: 260px;
+    background-image: url('../img/solar-roof.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 15px;
+}
+table{
+    margin: auto;
+    text-align: left;
+}
+table tr td{
+    padding: 1rem;
+    color: #444;
+}
+table tr td::before{
+    content:'✓';
+    padding-right: 1rem;
+    font-weight: bold;
+    color: #5cb85c;
+}
+table tr:nth-child(even){
+    background-color: #eee;
+}
+.second-section{    
+    max-width: 110%;
+    margin: 20px -15px 0px -15px;
+    padding: 0 1rem;
+    transform: rotate(2deg);
+    background-color: #21384d;
+}
+.middle-block{
+    max-width: 960px;
+    margin: auto;
+    padding: 40px 10px;
+    transform: rotate(-2deg);
+    color: #fff;
+}
+.middle-block i {
+    font-size: 40px;
+}
+.middle-block span {
+    display: block;
+    width: 80px;
+    height: 6px;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: #5b5b5b;
+}
+.middle-block h4 {
+    font-size: 24px;
+    font-weight: normal;
+}
+.icon-block{
+    margin: 1rem auto;
+}
+.second-card{
+    position: relative;
+    margin-top:100px;
+}
+.second-card .card-front {
+    padding: 2rem;
+    text-align: center;
+}
+.second-card .card-front > div {
+    padding: 1rem 1rem 1rem 0rem;
+}
+.second-card .card-bg-img{
+    height: 360px;
+    background-image: url('../img/coffee.jpg');
+}
+
+.second-card .card{
+    box-shadow: 0px 0px 8px 4px #ccc;
+    border-radius: 20px;    
+}
+
+.second-card button{
+    margin: auto;
+    text-align: center;
+}
+
+.second-card .card-back button{
+    margin-top: 90px;
+}
+
+.second-card .card-back{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.second-card .card-back img{
+   margin: 1rem auto 0;
+}
+
+.second-card span{
+    display: block;
+    width: 100px;
+    height: 6px;
+    margin: 30px auto;
+    border-radius: 20px;
+    background-color: #ccc;
+}
+
+.second-card .card-back .card-bg-img{
+    height: 360px;
+    background-image: url('../img/lady.jpg');
+}
+
+.review{
+    font-family: BandaRegular,Trebuchet,Tahoma,Arial,sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+}
+.bottom-block{
+    position: relative;
+    max-width: 950px;
+    height: 50vh;
+    margin: 3rem auto 0;
+    padding: 1rem;
+    transform: translateY(100px);
+    transition: 1s all ease;
+    opacity: 0;
+}
+.topText{
+    font-size: 20px;
+    color: #5d5d5d;
+}
+.middleText,
+.bottomText{
+    font-size: 16px;
+    line-height: 1.8rem;
+    text-align: left;
+}
+
+.bottom-block.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.arrow-icon{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    right: 10px;
+    transform: rotate(270deg);
+    animation: arrow 4s linear infinite;
+  }
+  
+  @keyframes arrow {
+    from { scale: 0.8;}
+    to { scale: 1.2;}
+  }
+@media screen and (min-width: 360px) {
+    .bottom-block{
+        height: 50vh;
+    }
+    .topText{
+        font-size: 24px;
+    }
+    .middleText,
+    .bottomText{
+        font-size: 16px;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .bottom-block{
+        height: 40vh;
+    }
+    .topText{
+        font-size: 28px;
+    }
+    .middleText,
+    .bottomText{
+        font-size: 18px;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px ) {
+    .menu-toggle{
+        display: none;
+    }
+    .show-menu{
+        position: static;
+    }
+    ul > li {
+        display: inline;
+    }
+    .nav-bar ul {
+        display: block;
+    }
+    h1{
+        margin: 1.5rem auto;
+        font-size: 2.2rem;
+    }
+    .row{
+        flex-direction: row;
+    }
+    .nav-bar, .card-front, .second-card .card-back  {
+        flex-direction: row-reverse;
+    }
+    .card{
+        height: 330px;
+    }
+    .card-front > div, .card-back > div {
+        width: 50%;
+        padding: 0 1rem;
+        overflow: hidden;
+    }
+    .second-section{    
+        margin: 220px -15px 0px -15px;
+    }
+    .second-card .card{
+        height: 510px;
+        padding: 0;
+    }
+    .second-card .card-front  {
+        flex-direction: row-reverse;
+    }
+    .second-card .card-front > div {
+        padding: 0rem 1rem 0rem 0rem;
+    }
+    .second-card button{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .second-card .card-front {
+        text-align: left;
+    }
+    .bottom-block{
+        height: 30vh;
+    }
+    .topText{
+        font-size: 30px;
+    }
+    .middleText,
+    .bottomText{
+        font-size: 20px;
+        line-height: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 768px ) and (max-width: 900px) {
+    .second-card .card{
+        height: 600px;
+    }
+    .second-card button{
+        width: 420px;
+    }
+}
